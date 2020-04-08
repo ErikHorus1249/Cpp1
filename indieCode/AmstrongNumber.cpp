@@ -1,3 +1,10 @@
+
+
+
+/*input : integer n
+output : is an Amstrong number ?*/
+
+
 #include<bits/stdc++.h>
 using namespace std;
 

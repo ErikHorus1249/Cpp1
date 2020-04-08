@@ -1,3 +1,5 @@
+// nhap vao toa do 3 dime va kiem tra tam giac
+
 #include<iostream>
 #include<math.h>
 using namespace std;
@@ -19,6 +21,7 @@ int main(){
 	l1 = sqrt(pow((x1-x2),2) + pow((y1-y2),2));
 	l2 = sqrt(pow((x1-x3),2) + pow((y1-y3),2));
 	l3 = sqrt(pow((x3-x2),2) + pow((y3-y2),2));
+
 	cout << "Do dai doan MN la : "<< l1 << endl;;
 	cout << "Do dai doan MP la : "<< l2 << endl;
 	cout << "Do dai doan NP la : "<< l3 << endl;

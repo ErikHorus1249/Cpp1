@@ -1,3 +1,0 @@
-- v? m?t phông n?n 
-- gameplay : khi con chim ch?m vào ?ng nu?c s? ch?t.
-_ ngày 1 : v? du?c background s? d?ng các l?p k?t th?a t? Jframe và Jpanel

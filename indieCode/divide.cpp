@@ -1,3 +1,5 @@
+// nhap vao mot so nguyen 5 <= n <= 50  va kiem tra chia het cho 5
+
 #include<iostream>
 
 using namespace std;
