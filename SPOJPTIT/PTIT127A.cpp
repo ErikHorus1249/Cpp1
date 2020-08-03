@@ -8,9 +8,7 @@ int main(){
   int max = 0, s = 0;
   if((m/2)<n) max = m/2;
   else max = n;
-
   s = (n-max) + (m - max*2);
-  
   if(k < s){
     cout << max;
     return 0;
