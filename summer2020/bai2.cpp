@@ -13,17 +13,17 @@ int main(){
     for(int i = 0; i < k; i++) cin >> a[i];
     int i = k-1;
     bool check = true;
-    while(i>=0 && a[i] == n-k+i+1){
+    while(i >= 0 && a[i] == n - k + i + 1){
       check = false;
       i --;
     }
-    // cout << i;
-    if(i>=0){
-      a[i]++;
-      for(int j = i+1; j < n; j++){
-        a[j] = a[j-1] + 1;
-      }
-    }
+    
+  	if(i >= 0){
+  		a[i]++ ;
+  		for(int j = i + 1; j < k ; j ++){
+  			a[j] = a[i] + j - i ;
+  		}
+  	}
 
     for(int i = 0; i < k; i++){
       if(check){
