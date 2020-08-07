@@ -1,20 +1,24 @@
 #include<bits/stdc++.h>
+using namespace std;
+int a[100], n;
+void nhap(){
+	for(int i = 0; i < n; i++) cin >> a[i];
+}
 
+void xuat(){
+	for(int i = 0; i < n; i++) cout << a[i] << ' ';
+}
 int main(){
-	int s[1010];
-	int n,k;
-	std::cin >> n >> k;
-	while(n--){
-		std::cin >> k;
-		// int leg = strlen(s);
-		std::cout << k << " ";
-		if(std::next_permutation(s,s+leg)){
-			for(int i = 0; i< leg; i++){
-				std::cout << s[i];
-			}
-			std::cout<<"\n";
+	int t;
+	cin >> t;
+	while(t--){
+		cin >> n;
+		nhap();
+		int check = 0;
+		int i = a
+		while () {
+			/* code */
 		}
-		else std::cout << "BIGEST";
+		xuat();
 	}
-
 }

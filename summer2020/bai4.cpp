@@ -6,22 +6,29 @@ int main(){
   long long t;
   cin >> t;
   while(t--){
-    string a;
-    cin >> a;
+    int k;
+    cin >> k;
+    char a[100];
+    for(int i = 0; i < k; i++){
+      a[i] = 'A';
+    }
+    // cout << a << endl;
     bool check = true;
-    for(long long i = a.size()-1; i >= 0; i--){
-      if(a[i] == '0'){
-        check = false;
-        a[i] = '1';
-        for(long long j = i+1; j<a.size(); j++) a[j] = '0';
-        break;
+    while(1){
+      cout << a << " ";
+      for(long long i = k-1; i >= 0; i--){
+        if(a[i] == 'A'){
+          a[i] = 'B';
+          for(long long j = i+1; j<k; j++) a[j] = 'A';
+          break;
+        }
+        else if(i==0){
+          check = false;
+        }
       }
+
+      if(!check) break;
     }
-    if(check){
-      for(long long i = 0; i < a.size(); i++){
-        a[i] = '0';
-      }
-    }
-    cout << a << endl;
+    cout << endl;
   }
 }
