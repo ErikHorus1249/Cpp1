@@ -15,10 +15,25 @@ int main(){
 		cin >> n;
 		nhap();
 		int check = 0;
-		int i = a
-		while () {
-			/* code */
+		int i = n-2;
+		while (a[i]>=a[i+1]) {
+			i--;
 		}
-		xuat();
+		if(i>=0){
+			int k = n-1;
+			while(a[i]>=a[k]){
+				k--;
+			}
+			swap(a[i],a[k]);
+			sort(a+i+1, a+n);
+		}else{
+			check = 1;
+		}
+		if(check){
+			for(int i = 0; i < n; i++){
+				cout << i+1 << ' ';
+			}
+		}else xuat();
+		cout << endl;
 	}
 }
